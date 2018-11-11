@@ -1,1 +1,1 @@
-add_lunch_combo xenonhd_oxygen-userdebug
+add_lunch_combo aosp_oxygen-userdebug

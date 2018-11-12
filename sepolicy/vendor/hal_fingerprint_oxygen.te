@@ -24,8 +24,10 @@ add_service(hal_fingerprint_oxygen, hal_fingerprint_oxygen_service);
 # Need to add auth tokens to KeyStore
 use_keystore(hal_fingerprint_oxygen)
 allow hal_fingerprint_oxygen keystore:keystore_key { add_auth };
+
 # need to find KeyStore and add self
 allow hal_fingerprint_oxygen hal_fingerprint_oxygen_service:service_manager { add find };
+allow init hal_fingerprint_oxygen_service:service_manager { add find };
 
 allow hal_fingerprint_oxygen keystore_service:service_manager find;
 

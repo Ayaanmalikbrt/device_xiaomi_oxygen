@@ -22,7 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/oxygen/device.mk)
 
 # Inherit some common aospos  stuff.
-$(call inherit-product, vendor/aosp/config/common.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := oxygen
@@ -42,7 +42,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := "Xiaomi/oxygen/oxygen:7.1.1/NMF26F/V9.5.5.0.NDDMIFA:user/release-keys"
 
 # Gapps
-GAPPS_VARIANT := nano
+GAPPS_VARIANT := full
 TARGET_GAPPS_ARCH := arm64
 CUSTOM_BUILD_TYPE := UNOFFICIAL
 

@@ -24,7 +24,6 @@
 #include <android/security/IKeystoreService.h>
 #include <keystore/keystore_return_types.h>
 #include <utils/Log.h>
-#include <utils/String16.h>
 
 
 #include "FingerprintDaemonProxy.h"

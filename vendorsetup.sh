@@ -1,1 +1,1 @@
-add_lunch_combo dot_oxygen-userdebug
+add_lunch_combo pixys_oxygen-userdebug
